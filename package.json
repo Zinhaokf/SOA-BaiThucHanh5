@@ -6,8 +6,9 @@
     "auth": "cd BaiThucHanh2 && node server.js",
     "product": "cd BaiThucHanh3 && node index.js",
     "order": "cd BaiThucHanh4 && node index.js",
-    "start": "concurrently -n auth,product,order \"npm:auth\" \"npm:product\" \"npm:order\"",
-    "install:all": "npm install && cd BaiThucHanh2 && npm install && cd ../BaiThucHanh3 && npm install && cd ../BaiThucHanh4 && npm install"
+    "report": "cd BaiThucHanh5 && node index.js",
+    "start": "concurrently -n auth,product,order,report \"npm:auth\" \"npm:product\" \"npm:order\" \"npm:report\"",
+    "install:all": "npm install && cd BaiThucHanh2 && npm install && cd ../BaiThucHanh3 && npm install && cd ../BaiThucHanh4 && npm install && cd ../BaiThucHanh5 && npm install"
   },
   "keywords": [],
   "author": "",
